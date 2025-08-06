@@ -1,3 +1,5 @@
+#Q6
+
 blob = "Neither apple nor pine are in pineapple. Boxing rings are square.\nWriters write, but fingers dont fing.Overlook and oversee are opposites.\nA house can burn up as it burns down. An alarm goes off by going on. \n"
 
 def readLines(file):
@@ -45,4 +47,29 @@ with open("blob.txt", "a+") as f:
 
     freqTrain(f)
 
+'''
+ojasmittal@pop-os ~/D/C/q6 (main)> python3 q6.py
+1 :  Neither apple nor pine are in pineapple. Boxing rings are square.
+
+2 :  Writers write, but fingers dont fing.Overlook and oversee are opposites.
+
+3 :  A house can burn up as it burns down. An alarm goes off by going on. 
+
+4 :  Apple seeds contain hydrogen cyanide. That stuff can kill youNeither apple nor pine are in pineapple. Boxing rings are square.
+
+5 :  Writers write, but fingers dont fing.Overlook and oversee are opposites.
+
+6 :  A house can burn up as it burns down. An alarm goes off by going on. 
+
+7 :  Apple seeds contain hydrogen cyanide. That stuff can kill you
+Last line-
+Apple seeds contain hydrogen cyanide. That stuff can kill you
+10th char onwards-
+ple nor pine are in pineapple. Boxing rings are square.
+
+Enter line no: 2
+Neither apple nor pine are in pineapple. Boxing rings are square.
+
+{'n': 3, 'a': 16, 'p': 4, 'i': 4, 'b': 10, 'r': 2, 's': 6, 'w': 2, 'f': 4, 'd': 4, 'o': 8, 'h': 4, 'c': 8, 'u': 2, 'g': 4, 't': 2, 'k': 2, 'y': 2}
+'''
     
