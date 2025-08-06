@@ -3,7 +3,7 @@
 matrix = eval(input('enter matrix: '))
 rows = int(input('enter r: '))
 columns = int(input('enter c: '))
-   
+
 def reshape(mat,r,c):
     ro = len(mat)
     co = len(mat[0])
