@@ -23,8 +23,9 @@ def freqTrain(file):
         else:
             train[i[0].lower()] += 1
     
-    print(train)
-
+    train_list = list(train.items())
+    for i in train_list:
+        print("Words beginning with ", i[0], ": ", i[1])
 
 
 with open("blob.txt", "a+") as f:
@@ -55,21 +56,31 @@ ojasmittal@pop-os ~/D/C/q6 (main)> python3 q6.py
 
 3 :  A house can burn up as it burns down. An alarm goes off by going on. 
 
-4 :  Apple seeds contain hydrogen cyanide. That stuff can kill youNeither apple nor pine are in pineapple. Boxing rings are square.
-
-5 :  Writers write, but fingers dont fing.Overlook and oversee are opposites.
-
-6 :  A house can burn up as it burns down. An alarm goes off by going on. 
-
-7 :  Apple seeds contain hydrogen cyanide. That stuff can kill you
+4 :  Apple seeds contain hydrogen cyanide. That stuff can kill you
 Last line-
 Apple seeds contain hydrogen cyanide. That stuff can kill you
 10th char onwards-
 ple nor pine are in pineapple. Boxing rings are square.
 
-Enter line no: 2
-Neither apple nor pine are in pineapple. Boxing rings are square.
-
-{'n': 3, 'a': 16, 'p': 4, 'i': 4, 'b': 10, 'r': 2, 's': 6, 'w': 2, 'f': 4, 'd': 4, 'o': 8, 'h': 4, 'c': 8, 'u': 2, 'g': 4, 't': 2, 'k': 2, 'y': 2}
+Enter line no: 1
+Apple seeds contain hydrogen cyanide. That stuff can kill you
+Words beginning with  n :  2
+Words beginning with  a :  8
+Words beginning with  p :  2
+Words beginning with  i :  2
+Words beginning with  b :  5
+Words beginning with  r :  1
+Words beginning with  s :  3
+Words beginning with  w :  1
+Words beginning with  f :  2
+Words beginning with  d :  2
+Words beginning with  o :  4
+Words beginning with  h :  2
+Words beginning with  c :  4
+Words beginning with  u :  1
+Words beginning with  g :  2
+Words beginning with  t :  1
+Words beginning with  k :  1
+Words beginning with  y :  1
 '''
     
